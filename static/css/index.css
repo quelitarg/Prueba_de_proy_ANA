@@ -91,7 +91,7 @@ h2{
     height: 50px; 
     margin:0px;
     margin-top:5px;
-    margin-left: 30px;
+    margin-left: 0px;
     border-radius: 10%;
 
 }
@@ -427,11 +427,11 @@ p {
 
 /*Medias Querys*/
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 695px){
 
     #grid-container-banns{
         display: grid;
-        max-width:650px;
+        max-width:695px;
         background-color:var(--secondary-color);
         grid-template-columns: repeat(2,1fr);
         flex-direction: column;
@@ -442,7 +442,7 @@ p {
 
 
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 695px){
 
     
     p {
@@ -458,7 +458,6 @@ p {
     .link_title1{
         display: flex;
         flex-direction: row;
-        
         column-gap: 7px;
         font-size: .7rem;
         font-weight:3.2px;
@@ -480,7 +479,7 @@ p {
         display: flex;
         justify-content:flex-end;
         column-gap: 7px;
-        margin-right: 20px;
+        margin-right: 15px;
         margin-top: 10px;
         
     }
@@ -496,7 +495,66 @@ p {
 
 }
 
-@media screen and (max-width:290px){
+@media screen and (max-width:480px){
+    
+    #grid-container-banns{
+        display: grid;
+        background-color:var(--secondary-color);
+        grid-template-columns: 100%;
+        place-content: center;
+        /*min-width: 360px;
+         flex-direction: column;*/
+    }
+
+        
+    .cont-pres{
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        flex-wrap: nowrap;
+        max-width: 480px;
+        max-height: 380px;
+    }
+    
+    #hero {
+        background-image: url("/static/img/IMG-20240506-Leo.jpeg");
+        background-position:center;
+        background-size:cover;
+        /*background-attachment: fixed;*/
+        max-height: 380px;
+        max-width: 440px;
+        padding: 0px;
+        margin: 20px;
+       
+       
+    }
+
+    .item-bann-public{
+            max-width: 100%;
+            border-radius: 0;
+            box-shadow: 2px 2px 2x 2px rgba(0,0,0,0.5);
+            height:450px;
+            margin: 0;
+            padding: 0;
+    }
+    
+    .card{
+            display:flex;
+            text-decoration: none;
+            box-sizing: content-box;
+            max-width: 100%;
+            height: 450px;
+            opacity: 0;
+    }
+
+    .footer_box {
+        background-color: var(--third-color);
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        height: 90px;
+        /*max-width: 480px;  */  
+    }
+    
     p {
         display:flex;
         flex-direction: column;
@@ -506,9 +564,18 @@ p {
         
     }
 
+    .redes_sociales{
+        display: flex;
+        justify-content:flex-end;
+        column-gap: 5px;
+        margin-right: 5px;
+        margin-top: 10px;
+        
+    }
+
     .it_footer{
         margin-left: 4px;
     
-}   
+    }   
 
 }
