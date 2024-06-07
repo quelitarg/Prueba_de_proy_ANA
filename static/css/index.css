@@ -425,7 +425,7 @@ p {
 
 }
 
-/*Medias Querys*/
+/*Medias Queries*/
 
 @media screen and (max-width: 695px){
 
@@ -483,16 +483,7 @@ p {
         margin-top: 10px;
         
     }
-
-    /*@media screen and (min-width: 1500px){
-
-        .header{
-            position: relative;
-        }
-    }*/
-        
     
-
 }
 
 @media screen and (max-width:480px){
