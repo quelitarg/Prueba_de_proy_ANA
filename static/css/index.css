@@ -512,7 +512,7 @@ p {
         justify-content:center;
         align-items:center;
         flex-wrap: nowrap;
-        max-width: 480px;
+        max-width: 440px;
         max-height: 380px;
     }
     
@@ -520,9 +520,9 @@ p {
         background-image: url("/static/img/IMG-20240506-Leo.jpeg");
         background-position:center;
         background-size:cover;
-        /*background-attachment: fixed;*/
-        max-height: 380px;
-        max-width: 440px;
+        /*background-attachment: fixed;
+        max-width: 100%;*/
+        max-height: auto;
         padding: 0px;
         margin: 20px;
        
