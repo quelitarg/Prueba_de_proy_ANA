@@ -93,7 +93,7 @@ h2{
     margin-top:5px;
     margin-left: 0px;
     border-radius: 10%;
-
+    
 }
 a{
     cursor: pointer;
@@ -103,8 +103,6 @@ nav{
     justify-content: space-between;
     align-items: center;
     height: 70px;   
-    padding: 0px 50px;
-
     
 }
 
@@ -115,6 +113,10 @@ nav{
     padding: 0px 30px 5px;
     margin: 1px;
     
+}
+
+.enlace{
+    padding-left: 40px;
 }
 
 .navbar_menu {
@@ -201,6 +203,20 @@ nav{
     list-style:none;
     text-align: center;
     
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #ffffff;
+    float:right;
+    line-height: 70px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
 }
 
 
@@ -429,6 +445,10 @@ p {
 
 @media screen and (max-width: 695px){
 
+    .enlace{
+        padding-left: 25px;
+    }
+
     #grid-container-banns{
         display: grid;
         max-width:695px;
@@ -443,6 +463,29 @@ p {
 
 
 @media screen and (max-width: 695px){
+
+    .navbar{
+        display: flex;
+        height: 70px;   
+        padding: 0px 15px 5px;
+        margin: 1px;
+        
+    }
+    .navbar_menu {
+        display: flex;
+        align-items: center;
+        padding: 5px 15px;
+        list-style: none;
+        gap: auto;
+        height: 100vh;
+        
+        
+    }
+
+    .navbar_link {
+        font-size: 13px;
+    }
+
 
     
     p {
@@ -488,6 +531,88 @@ p {
 
 @media screen and (max-width:480px){
     
+    .enlace{
+        padding-left: 20px;
+    }
+
+    #logoNA {
+        width: 100px;
+        height: 50px; 
+        margin:0px;
+        margin-top:10px;
+        margin-left: 0px;
+        border-radius: 10%;
+    
+    }
+
+    .checkbtn{
+        font-size: 30px;
+        color: #ffffff;
+        float:right;
+        line-height: 70px;
+        margin-right: 20px;
+        cursor: pointer;
+        display: block;
+    }
+    
+    #check{
+        display: none;
+    }
+    
+    nav{
+        display: inline-block;
+        justify-content: space-between;
+        align-items:flex-start;
+        height: 70px;  
+        width: 100%; 
+    }
+ 
+    .navbar {
+        display: inline-block;
+        height: 70px;   
+        padding: 0px 0px 0px;
+        margin: 0px;
+        
+    }
+    
+    .navbar_menu {
+        float: right;
+        width: 100%;
+        top: 70px;
+        align-items: baseline;
+        padding: 32px 0px;
+        list-style: none;
+        gap: auto;
+        height: 100vh;
+        background: rgb(43, 42, 42, 1);
+        display: none;
+        transition: all .15s;
+    }
+    
+    .list_item {
+        display: flex;
+        margin-top: 1px;
+        margin-bottom: 32x;
+        padding: 2px 15px;
+        line-height: 30px;
+        list-style:none;
+        justify-content:right;
+        
+    }
+
+    #check:checked ~.navbar_menu{
+        display: block;
+    }
+
+    .navbar_link {
+        font-size: 16px;
+    }
+
+    .list_item > ul {
+        max-width: 40%;
+        line-height: 20px;
+    }
+
     #grid-container-banns{
         display: grid;
         background-color:var(--secondary-color);
