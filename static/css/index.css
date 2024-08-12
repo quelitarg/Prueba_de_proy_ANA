@@ -741,7 +741,7 @@ footer > h3{
 
     .position-button{
         bottom: 140px; 
-        right: 15px; 
+        right: 10px; 
         position: fixed; 
         z-index: 9;
     }
