@@ -740,8 +740,8 @@ footer > h3{
     }
 
     .position-button{
-        bottom: 135px; 
-        right: 25px; 
+        bottom: 140px; 
+        right: 20px; 
         position: fixed; 
         z-index: 9;
     }
@@ -795,7 +795,7 @@ footer > h3{
         background-color: var(--third-color);
         display:grid;
         grid-template-columns:1fr 1fr 1fr;
-        height: 90px;
+        height: 100px;
         max-width: 2000px;    
     }
     
