@@ -14,11 +14,11 @@ margin-top: 70px;
 max-width: 1300px;
 }
 
-.container_contact{
+/*.container_contact{
     display: flex;
     justify-content:flex-start;
     margin-bottom: 3px;
-}
+} */
 
 .container_form{
     flex-direction: column;
@@ -66,6 +66,10 @@ justify-content: start;
     column-gap: 10px;
     font-size: 1.1rem;
     font: weight 4.5px;
+
+}
+
+.box_iframe {
 
 }
 /*
@@ -122,6 +126,10 @@ height: 130px;
     .container_form{
         margin-top:10px;
     } 
+
+    .box_iframe {
+       min-height: 50vh;
+    }
   
 }
 
@@ -152,15 +160,19 @@ height: 130px;
             color:white;
         }
 
-        .box_iframe{
+        /*.box_iframe{
              width: 320px;
              height: 400px;
-        }
+        } */
+
+        .box_iframe {
+            min-height: 50vh;
+         }
 }
 
 @media screen and (max-width:580px) {
     
-    #logoInst{
+   /* #logoInst{
         width:17px;
         height: 17px;
     }
@@ -179,7 +191,7 @@ height: 130px;
         font-weight: 200;
         font: size 0.8em; ;
 
-    }
+    } */
 
     #logo-whatssap {
         width:15px ;
